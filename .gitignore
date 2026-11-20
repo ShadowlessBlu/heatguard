@@ -1,0 +1,24 @@
+# Private: unpublished papers, their analysis/figures, hardware test sketches
+# (anchored with a leading / so they never match app/src/test/)
+/Papers/
+/Analysis/
+/Figures/
+/Test/
+/README_echowear_internal_notes.md
+/_submission/
+
+# Build output and local settings
+**/build/
+**/.gradle/
+**/.idea/
+**/.kotlin/
+**/local.properties
+EchoWear_Android/_backup_*/
+*.log
+*.apk
+
+# Python
+__pycache__/
+*.pyc
+HeatRisk/sim/out/
+.venv/

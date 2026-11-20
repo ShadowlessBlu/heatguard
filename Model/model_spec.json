@@ -1,0 +1,43 @@
+{
+ "window": 100,
+ "channels": 6,
+ "rate_hz": 50,
+ "stride_samples": 25,
+ "vote": 2,
+ "refractory_windows": 10,
+ "mean": [
+  0.05554306507110596,
+  -0.38687628507614136,
+  0.3556869626045227,
+  0.7463678121566772,
+  -0.32879117131233215,
+  -1.1053094863891602
+ ],
+ "std": [
+  0.6782982349395752,
+  0.4770328104496002,
+  0.44709277153015137,
+  75.38560485839844,
+  50.464012145996094,
+  73.39215850830078
+ ],
+ "global_threshold": 0.9500000000000006,
+ "personal": {
+  "mode": "raise only",
+  "floor": 0.9500000000000006,
+  "margin": 0.02,
+  "cap": 0.99,
+  "tail_quantile": 0.9995,
+  "calibration": "decayed histogram of min(score[t], score[t-1]) over the wearer's own normal wear"
+ },
+ "int8_float_decision_agreement": 0.9733333333333334,
+ "trained_on": {
+  "windows": 27178,
+  "positives": 1861,
+  "subjects": 21,
+  "datasets": [
+   "HIFD (21, ages ~21-31), gravity restored from the orientation quaternion"
+  ],
+  "augmentation": "elderly-like synthetic motion + 10 Hz low-pass; no real older adults in the data"
+ }
+}
